@@ -26,7 +26,7 @@ import imp
 
 from setuptools import setup
 
-version = imp.load_source('config_finder.version', 'config-finder/version.py')
+version = imp.load_source('config_finder.version', 'config_finder/version.py')
 
 setup(name="config-finder",
       version=version.__version__,
@@ -41,7 +41,7 @@ setup(name="config-finder",
                    "Programming Language :: Python",
                    "Topic :: Scientific/Engineering"],
       url="https://github.com/pytroll/config-finder",
-      packages=['config-finder'],
+      packages=['config_finder'],
       install_requires=['pyyaml'],
       test_suite='config_finder.test_suite',
       )
