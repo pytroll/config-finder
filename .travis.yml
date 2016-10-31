@@ -9,6 +9,7 @@ os:
 - linux
 install:
 - pip install .
+- pip install coveralls
 script:
 - coverage run --source=satpy setup.py test
 after_success: coveralls
