@@ -138,10 +138,10 @@ class TestConfigSearch(unittest.TestCase):
                          ['/tmp/conf.cfg', './conf.cfg'])
 
         self.assertEqual(config_search_paths('conf.cfg', '/tmp', '.'), [])
-        with open('/tmp/conf.cfg', 'w') as fd_:
+        with open('/tmp/conf.cfg', 'w'):
             pass
 
-        with open('./conf.cfg', 'w') as fd_:
+        with open('./conf.cfg', 'w'):
             pass
 
         self.assertEqual(config_search_paths('conf.cfg', '/tmp', '.'),
