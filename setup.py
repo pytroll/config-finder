@@ -26,7 +26,7 @@ import imp
 
 from setuptools import setup
 
-version = imp.load_source('config_finder', 'config-finder/__init__.py')
+version = imp.load_source('config_finder.version', 'config-finder/version.py')
 
 setup(name="config-finder",
       version=version.__version__,

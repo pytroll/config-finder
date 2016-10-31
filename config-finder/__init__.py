@@ -37,8 +37,6 @@ from six.moves import configparser
 
 LOG = logging.getLogger(__name__)
 
-__version__ = 'v0.1.1'
-
 
 def recursive_dict_update(d, u):
     """Recursive dictionary update.
