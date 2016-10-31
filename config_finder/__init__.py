@@ -28,12 +28,19 @@
 
 import logging
 import os
-import unittest
 from collections import Mapping
 
 import yaml
 
 from six.moves import configparser
+
+if sys.version_info < (2, 7):
+    import unittest2 as unittest
+else:
+    import unittest
+
+
+
 
 LOG = logging.getLogger(__name__)
 
