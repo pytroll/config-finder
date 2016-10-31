@@ -183,7 +183,7 @@ class TestConfigFinder(unittest.TestCase):
         for section, content in dict1.items():
             cfg.add_section(section)
             for key, val in content.items():
-                cfg.set(section, key, val)
+                cfg.set(section, key, str(val))
         with open('/tmp/conf.ini', 'w') as fd_:
             cfg.write(fd_)
 
@@ -192,7 +192,7 @@ class TestConfigFinder(unittest.TestCase):
         for section, content in dict2.items():
             cfg.add_section(section)
             for key, val in content.items():
-                cfg.set(section, key, val)
+                cfg.set(section, key, str(val))
         with open('./conf.ini', 'w') as fd_:
             cfg.write(fd_)
 

@@ -11,6 +11,6 @@ install:
 - pip install .
 - pip install coveralls
 script:
-- coverage run --source=config-finder setup.py test
+- coverage run --source=config_finder setup.py test
 after_success: coveralls
 sudo: false
