@@ -42,6 +42,6 @@ setup(name="config-finder",
                    "Topic :: Scientific/Engineering"],
       url="https://github.com/pytroll/config-finder",
       packages=['config_finder'],
-      install_requires=['pyyaml'],
+      install_requires=['pyyaml', 'six'],
       test_suite='config_finder.test_suite',
       )
