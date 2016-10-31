@@ -28,6 +28,7 @@
 
 import logging
 import os
+import sys
 from collections import Mapping
 
 import yaml
@@ -38,8 +39,6 @@ if sys.version_info < (2, 7):
     import unittest2 as unittest
 else:
     import unittest
-
-
 
 
 LOG = logging.getLogger(__name__)
